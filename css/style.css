@@ -1,0 +1,125 @@
+/**
+ * Custom styles here
+ */
+
+body {
+   background-color: #fff;
+}
+
+#header {
+	background: #eee;
+}
+
+.list-inline .menu-block-wrapper li {
+	display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#utility-nav-and-icons {
+	background:rgba(0,39,76,.5);
+}
+
+#header .list-inline .menu-block-wrapper li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+} 
+
+#header .list-inline .menu-block-wrapper li  a {
+	color: #fff;
+}
+
+#header .list-inline ul {
+	-webkit-padding-start: 0;
+	padding-top: 8px;
+}
+
+#header .logo-and-nav {
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  width: 100%;
+}
+
+#header .integrated-header {
+  padding-top: 102px;
+}
+
+.logo img {
+	max-width: 100%;
+}
+
+a#site-menu-button {
+	background: rgba(0,0,0,.3);
+    padding: 6px 9px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1.4em;
+    text-decoration: none;
+	margin-top: 8px;
+}
+
+
+
+#section-1 {
+	background: #ddd;	
+}
+
+#section-2 {
+	background: #ccc;	
+}
+
+#section-3 {
+	background: #bbb;	
+}
+
+#section-4 {
+	background: #aaa;	
+}
+
+#footer {
+	background: #999;	
+}
+
+/* MEDIA QUERIES */
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+        
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+  #header .logo-name-nav {
+    background: none;
+    position: relative;
+    width: auto;
+  }
+  
+  #header .integrated-header {
+    padding-top: none;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
