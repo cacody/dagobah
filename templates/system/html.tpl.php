@@ -67,7 +67,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
- 
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/css/jquery.mmenu.all.min.css" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/js/jquery.mmenu.all.min.js"></script>
 

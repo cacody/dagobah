@@ -7,7 +7,7 @@ body {
 }
 
 #header {
-	background: #eee;
+	background: #00274c;
 }
 
 .list-inline .menu-block-wrapper li {
@@ -49,18 +49,26 @@ body {
 	max-width: 100%;
 }
 
+.logo-name-nav h1 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
 a#site-menu-button {
-	background: rgba(0,0,0,.3);
     padding: 6px 9px;
     color: white;
     text-align: center;
     display: block;
     font-size: 1.4em;
     text-decoration: none;
-	margin-top: 8px;
+    margin-top: 8px;
 }
 
-
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff !important;
+    background: #fff;
+}
 
 #section-1 {
 	background: #ddd;	

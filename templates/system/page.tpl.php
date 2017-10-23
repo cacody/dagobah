@@ -103,44 +103,45 @@
     <div class="col-md-12">
       <div class="row logo-name-nav">
         <?php if ($logo): ?>
-          <div class="col-xs-3 col-sm-3 col-md-2">
+          <div class="col-xs-3 col-sm-2">
 	        <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
 	          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
 	        </a>
-        </div>
-		<?php endif; ?>
+          </div>
+	<?php endif; ?>
 		
 		
-		
-        <div class="col-md-3 col-md-push-6">
-	      <div class="pull-right text-right">	
-	        <div class="page">
-		      <a href="#menu" id="site-menu-button">MENU 	
-			    <button class="hamburger hamburger--collapse" type="button">
-				  <span class="hamburger-box">
-				    <span class="hamburger-inner"></span>
-				  </span>
-				</button></a> 
-		    </div>
-		    
-	     </div>
-        </div>
-
         <?php if ($site_name): ?>
-	      <div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-3">
+	      <div id="site-name" class="col-xs-4 col-xs-offset-1 col-sm-8 col-sm-offset-0">
 		    <h1><?php print $site_name; ?></h1>
- 		  </div>
-		<?php endif; ?>
-
+		    <?php if ($site_slogan): ?>
+                      <div id="site-slogan">
+                      <?php print $site_slogan; ?>
+                      </div>
+                    <?php endif; ?>
+ 	      </div>
+	<?php endif; ?>
+        <div class="col-xs-2 col-xs-offset-1 col-sm-offset-0">
+              <div>
+                <div class="page">
+                  <a href="#menu" id="site-menu-button">MENU
+                    <button class="hamburger hamburger--collapse" type="button">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                     </button></a>
+                    </div>
+             </div>
+        </div>
 
       </div> <!-- /logo and nav row  -->
 
-
+    <?php if (!empty($page['integrated_header'])): ?>
       <div class="row integrated-header">
-        <?php if (!empty($page['integrated_header'])): ?>
           <?php print render($page['integrated_header']); ?>
-        <?php endif; ?>
       </div> <!-- /integrated_header region  -->
+    <?php endif; ?>
+
     </div>
   </div> <!-- /head row -->
 </div>
@@ -179,7 +180,7 @@
 <div id="content-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="background:green;">
+			<div class="col-md-12">[content = "MAIN CONTENT"]
 			    	<?php if (!empty($page['navigation'])): ?>
 			            <?php print render($page['navigation']); ?>
 			          <?php endif; ?>
