@@ -2,12 +2,26 @@
  * Custom styles here
  */
 
+a:focus {
+    outline: ddd dotted;
+    outline: 1px auto #fff;
+    outline-offset: 0px;
+}
+
+:focus {
+    outline: #ddd auto 1px;
+}
+
 body {
    background-color: #fff;
+   font-family: 'Lato' sans-serif;
+   font-weight: 400;
+   font-size: 17px;
+   color: #585858; 
 }
 
 #header {
-	background: #00274c;
+	background: rgba(0,45,98,.8);
 }
 
 .list-inline .menu-block-wrapper li {
@@ -41,11 +55,16 @@ body {
   width: 100%;
 }
 
+#header #logo-name-nav {
+  padding-top:20px;
+}
+
 #header .integrated-header {
   padding-top: 102px;
 }
 
 .logo img {
+	min-width: 100;
 	max-width: 100%;
 }
 
@@ -53,21 +72,46 @@ body {
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  padding-top:10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
+#site-slogan {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size:1.3em;
+}
+
+#site-slogan strong {
+  font-weight: 300;
+}
+
+
 a#site-menu-button {
-    padding: 6px 9px;
     color: white;
-    text-align: center;
+    text-align: right;
     display: block;
-    font-size: 1.4em;
+    font-size: 1em;
     text-decoration: none;
-    margin-top: 8px;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #fff !important;
     background: #fff;
+    height: 3px !important;
+}
+
+.hamburger-box {
+    display: block !important;
+}
+
+.hamburger .menu-title {
+    font-family: 'Lato';
+    font-weight: 300;
+    display: block;
+    padding-top: 4px;
 }
 
 #section-1 {
@@ -76,6 +120,10 @@ a#site-menu-button {
 
 #section-2 {
 	background: #ccc;	
+}
+
+section#content-section {
+	padding-top:25px;
 }
 
 #section-3 {
@@ -90,13 +138,56 @@ a#site-menu-button {
 	background: #999;	
 }
 
+.nopadding {
+  padding: 0 !important;
+}
+
+.opportunity-full-node-part1 {
+  padding-bottom: 20px;
+}
+
+#content-section h1 {
+  text-transform: uppercase;
+  color: #696969;
+  margin-bottom: 0;
+  font-family: 'Lato';
+}
+
+.opportunity-city-state {
+  color: #696969;
+  font-size: 1.6em;
+  font-family: 'Lato';
+}
+
+.opportunity-nid {
+  color: #696969;
+  font-size: 1.2em;
+  font-family: 'Lato';
+}
+
+.opportunity-full-node-part2 {
+  
+}
+
+h2.opportunity-node-h2 {
+  font-size: 1em;
+  color: #024794;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+
+
 /* MEDIA QUERIES */
 
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
-        
+   .logo-name-nav h1 {
+       padding-top: 0;
+   } 
 }
 
 /* Extra Small Devices, Phones */ 
@@ -112,17 +203,33 @@ a#site-menu-button {
     padding-top: none;
   }
 
+
 }
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-
+#header {
+        background: rgba(0,45,98,.6);
+}
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
+#header {
+        background: rgba(0,45,98,.4);
+	padding-bottom: 25px;
+}
 
 }
 

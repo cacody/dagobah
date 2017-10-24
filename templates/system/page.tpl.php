@@ -74,8 +74,8 @@
  */
 ?>
 <div id="page">
-
-<header id="header" class="bg-image">
+<section class="bg-image">
+<header id="header">
 	<div id="utility-nav-and-icons">
 		<?php if (!empty($page['utility_nav']) || !empty($page['icon_area'])): ?>
 			<div class="container">
@@ -98,6 +98,7 @@
 			</div>
 		<?php endif; ?>
 	</div>
+<div id="logo-name-nav">
 <div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -112,23 +113,25 @@
 		
 		
         <?php if ($site_name): ?>
-	      <div id="site-name" class="col-xs-4 col-xs-offset-1 col-sm-8 col-sm-offset-0">
+	      <div id="site-name" class="col-xs-4 col-sm-8 col-sm-offset-0">
 		    <h1><?php print $site_name; ?></h1>
 		    <?php if ($site_slogan): ?>
-                      <div id="site-slogan">
-                      <?php print $site_slogan; ?>
+                      <div id="site-slogan" class="hidden-xs">
+                      OPPORTUNITIES IN <strong><em>DENTISTRY</em></strong>
+                      <?php //print $site_slogan; ?>
                       </div>
                     <?php endif; ?>
  	      </div>
 	<?php endif; ?>
-        <div class="col-xs-2 col-xs-offset-1 col-sm-offset-0">
+        <div class="col-xs-2 col-xs-offset-2 col-sm-offset-0">
               <div>
                 <div class="page">
-                  <a href="#menu" id="site-menu-button">MENU
+                  <a href="#menu" id="site-menu-button">
                     <button class="hamburger hamburger--collapse" type="button">
                                   <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                   </span>
+                                  <span class="menu-title">MENU</span>
                      </button></a>
                     </div>
              </div>
@@ -143,8 +146,10 @@
     <?php endif; ?>
 
     </div>
+</div>
   </div> <!-- /head row -->
 </div>
+</section>
 </header><!-- /#header  -->	
 
 <?php if (!empty($page['optional_region_1'])): ?>
@@ -177,10 +182,10 @@
 <?php endif; ?>
 
 
-<div id="content-section">
+<section id="content-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">[content = "MAIN CONTENT"]
+			<div class="col-md-12">
 			    	<?php if (!empty($page['navigation'])): ?>
 			            <?php print render($page['navigation']); ?>
 			          <?php endif; ?>
@@ -200,9 +205,10 @@
 					      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 					      <a id="main-content"></a>
 					      <?php print render($title_prefix); ?>
-					      <?php if (!empty($title)): ?>
-					        <h1 class="page-header"><?php print $title; ?></h1>
-					      <?php endif; ?>
+					      <!-- hide default title / using views to create node assembly -->
+					      <?php //if (!empty($title)): ?>
+					        <!--<h1 class="page-header"><?php print $title; ?></h1>-->
+					      <?php //endif; ?>
 					      <?php print render($title_suffix); ?>
 					      <?php print $messages; ?>
 					      <?php if (!empty($tabs)): ?>
@@ -228,7 +234,7 @@
 			</div>
 		</div>
 	</div>
-</div><!-- /#  -->
+</section><!-- /#  -->
 
 <div id="optinoal-region-3">
 	<div class="container">

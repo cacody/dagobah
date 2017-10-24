@@ -67,10 +67,20 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/css/jquery.mmenu.all.min.css" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/js/jquery.mmenu.all.min.js"></script>
+<script type="text/javascript">
+window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    };
 
+</script>
 <script type="text/javascript">
          jQuery(document).ready(function( $ ) {
             $("#menu").mmenu({
