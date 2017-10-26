@@ -156,11 +156,8 @@
 <div id="section-1" role="complementary">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="background:orange;">
-			      	sec 1
-					
-						<?php print render($page['optional_region_1']); ?>
-					
+			<div class="col-md-12">
+				<?php print render($page['optional_region_1']); ?>	
 			</div>
 		</div>
 	</div>
@@ -172,9 +169,8 @@
 <div id="section-2">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="background:yellow;">
-			sec 2
-			<?php print render($page['optional_region_2']); ?>
+			<div class="col-md-12">
+				<?php print render($page['optional_region_2']); ?>
 			</div>
 		</div>
 	</div>
@@ -235,56 +231,43 @@
 		</div>
 	</div>
 </section><!-- /#  -->
-
+<?php if (!empty($page['optional_region_3'])): ?>
 <div id="optinoal-region-3">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="background:blue;">sec 4
-				</div>
+			<div class="col-md-12">
+				<?php print render($page['optional_region_3']); ?>
+			</div>
 		</div>
 	</div>
 </div><!-- /#  -->
+<?php endif; ?>
 
+<?php if (!empty($page['optional_region_4'])): ?>
 <div id="optional-region-4">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="background:violet;">sec 5</div>
+			<div class="col-md-12">
+				<?php print render($page['optional_region_4']); ?>
+			</div>
 		</div>
 	</div>
 </div><!-- /#  -->
-
+<?php endif; ?>
+<?php if (!empty($page['footer'])): ?>
 <div id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="background:purple;">footer</div>
+			<div class="col-md-12">
+				<div class="row">
+				<?php print render($page['footer']); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 </div><!-- /#footer  -->
-
-
-<div style="background:#000;"><h1>BREAK LINE</h1></div>
-
-
-
-<div class="main-container <?php print $container_class; ?>">
-
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-
-  
-</div>
-
-<?php if (!empty($page['footer'])): ?>
-  <footer class="footer <?php print $container_class; ?>">
-    <?php print render($page['footer']); ?>
-  </footer>
 <?php endif; ?>
-</div>
+
 
 <nav id="menu" role="navigation">
          <?php if (!empty($page['site_menu'])): ?>

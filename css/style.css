@@ -4,12 +4,12 @@
 
 a:focus {
     outline: ddd dotted;
-    outline: 1px auto #fff;
+    outline: 0px auto #fff;
     outline-offset: 0px;
 }
 
 :focus {
-    outline: #ddd auto 1px;
+    outline: #ddd auto 0px;
 }
 
 body {
@@ -112,6 +112,7 @@ a#site-menu-button {
     font-weight: 300;
     display: block;
     padding-top: 4px;
+    font-size: .8em;
 }
 
 #section-1 {
@@ -124,6 +125,7 @@ a#site-menu-button {
 
 section#content-section {
 	padding-top:25px;
+	padding-bottom:45px;
 }
 
 #section-3 {
@@ -135,7 +137,21 @@ section#content-section {
 }
 
 #footer {
-	background: #999;	
+	background: #00274c;
+	color: #fff;
+	font-size: 1em;
+        min-height: 180px;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+
+.footer-service-caveat {
+	padding: 20px;
+	background: rgba(255,255,255,.1);
+	border: solid 1px rgba(255,255,255,.2);
+}
+
+.footer-service-caveat {
 }
 
 .nopadding {
@@ -177,7 +193,9 @@ h2.opportunity-node-h2 {
   font-weight: 400;
 }
 
-
+table {
+  font-size: .8em;
+}
 
 /* MEDIA QUERIES */
 
