@@ -111,31 +111,70 @@
           </div>
 	<?php endif; ?>
 		
-		
-        <?php if ($site_name): ?>
-	      <div id="site-name" class="col-xs-4 col-sm-8 col-sm-offset-0">
-		    <h1><?php print $site_name; ?></h1>
-		    <?php if ($site_slogan): ?>
-                      <div id="site-slogan" class="hidden-xs">
-                      OPPORTUNITIES IN <strong><em>DENTISTRY</em></strong>
-                      <?php //print $site_slogan; ?>
-                      </div>
-                    <?php endif; ?>
- 	      </div>
-	<?php endif; ?>
-        <div class="col-xs-2 col-xs-offset-2 col-sm-offset-0">
+	<?php if (!drupal_is_front_page()):  ?>
+                <?php if ($site_name): ?>
+                  <div id="site-name" class="col-xs-4 col-sm-8 col-sm-offset-0">
+                      <h1><?php print $site_name; ?></h1>
+                      <?php if ($site_slogan): ?>
+                        <div id="site-slogan" class="hidden-xs">
+                          OPPORTUNITIES IN <strong><em>DENTISTRY</em></strong>
+                          <?php //print $site_slogan; ?>
+                        </div>
+                      <?php endif; ?>
+                  </div>
+                <?php endif; ?>
+         <?php endif; ?>
+         <div class="visible-xs visible-sm visible-md hidden-lg hidden-xl">
+	 <?php if (drupal_is_front_page()): ?>
+	         <?php if ($site_name): ?>
+                  <div id="site-name" class="col-xs-4 col-sm-8 col-sm-offset-0">
+                      <h1><?php print $site_name; ?></h1>
+                      <?php if ($site_slogan): ?>
+                        <div id="site-slogan" class="hidden-xs">
+                          OPPORTUNITIES IN <strong><em>DENTISTRY</em></strong>
+                          <?php //print $site_slogan; ?>
+                        </div>
+                      <?php endif; ?>
+                  </div>
+                <?php endif; ?>	
+	 <?php endif; ?>
+         </div>
+
+ 	 <?php if (!drupal_is_front_page()):  ?>
+            <div class="col-xs-2 col-xs-offset-2 col-sm-offset-0">
               <div>
                 <div class="page">
                   <a href="#menu" id="site-menu-button">
                     <button class="hamburger hamburger--collapse" type="button">
-                                  <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                  </span>
-                                  <span class="menu-title">MENU</span>
-                     </button></a>
-                    </div>
-             </div>
-        </div>
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                      <span class="menu-title">MENU</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+        <?php endif; ?>
+         <?php if (drupal_is_front_page()):  ?>
+            <div class="col-xs-5 col-sm-2 col-md-2 col-lg-10">
+              <div>
+                <div class="page">
+                  <a href="#menu" id="site-menu-button">
+                    <button class="hamburger hamburger--collapse" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                      <span class="menu-title">MENU</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+	<?php endif; ?>
+
+        
+
 
       </div> <!-- /logo and nav row  -->
 

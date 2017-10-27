@@ -60,7 +60,7 @@ body {
 }
 
 #header .integrated-header {
-  padding-top: 102px;
+  padding-top: ;
 }
 
 .logo img {
@@ -75,6 +75,11 @@ body {
   padding-top:10px;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.front .homepage-centered-title .logo-name-nav h1 {
+  font-weight: 400;
+  font-size: 2.8em; 
 }
 
 #site-slogan {
@@ -193,8 +198,44 @@ h2.opportunity-node-h2 {
   font-weight: 400;
 }
 
+.front h2 {
+  font-family: 'Lato';
+  color: #024794;
+}
+
 table {
   font-size: .8em;
+}
+
+.front .views-exposed-form {
+    background: #232323;
+    padding: 13px 0 5px 0;
+}
+
+.front .views-exposed-form .views-exposed-widget {
+    float: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.front .views-widget-filter-field_type_tid {
+    width:70%;
+}
+
+.front #edit-submit-most-recent-postings {
+    margin-top: 0;
+}
+
+.front .homepage-blurb {
+    font-family: 'Lato';
+    font-weight: 300;
+    color: #fff;
+}
+
+a.miyellow, a.miyellow:link, a.miyellow:hover, a.miyellow:visited {
+    color: #ffcb05;
+    font-weight: bold;
 }
 
 /* MEDIA QUERIES */
