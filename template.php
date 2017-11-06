@@ -12,3 +12,17 @@ function dagobah_preprocess_html(&$variables) {
 function dagobah__menu_tree__menu_devel_slabre($variables){
     return "<ul class=\"list-inline\">\n" . $variables['tree'] ."</ul>\n";
 }
+
+function dagobah_form_user_login_alter(&$form, &$form_state, $form_id) {
+    //should also add JS focus code for iOS Safari
+    $form['name']['#attributes'] = array('autofocus' => '');
+}
+
+function dagobah_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#id'] == 'user-login') {
+    $form['name']['#description'] = t('4-30 Characters. Must start with a letter. Only Numbers, Letters, Hyphens, and Underscores may be used.'); // Clear the description of name
+    $form['pass']['#description'] = t(''); // Clear the description of pass
+  }
+}
+
+

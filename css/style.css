@@ -3,8 +3,7 @@
  */
 
 a:focus {
-    outline: ddd dotted;
-    outline: 0px auto #fff;
+    outline: 0px auto #f00;
     outline-offset: 0px;
 }
 
@@ -67,6 +66,7 @@ body {
 	min-width: 100;
 	max-width: 100%;
 }
+
 
 .logo-name-nav h1 {
   color: #fff;
@@ -150,14 +150,10 @@ section#content-section {
 	padding-bottom: 20px;	
 }
 
-.footer-service-caveat {
-	padding: 20px;
-	background: rgba(255,255,255,.1);
-	border: solid 1px rgba(255,255,255,.2);
+#footer img {
+  	padding-top: 20px;
 }
 
-.footer-service-caveat {
-}
 
 .nopadding {
   padding: 0 !important;
@@ -167,11 +163,16 @@ section#content-section {
   padding-bottom: 20px;
 }
 
+.opportunity-post h1.page-header {
+  display: none;
+}
+
 #content-section h1 {
   text-transform: uppercase;
   color: #696969;
   margin-bottom: 0;
   font-family: 'Lato';
+  font-size: 1.8em;
 }
 
 .opportunity-city-state {
@@ -198,9 +199,18 @@ h2.opportunity-node-h2 {
   font-weight: 400;
 }
 
-.front h2 {
+.page-search-listings h1.page-header {
+  display: none;
+}
+
+.front h1.page-header {
+  display: none;
+}
+
+.front h2, #content-section h1.pane-title {
   font-family: 'Lato';
   color: #024794;
+  text-transform: none;
 }
 
 table {
@@ -220,7 +230,20 @@ table {
 }
 
 .front .views-widget-filter-field_type_tid {
-    width:70%;
+    width: 70%;
+    display: inline-block;
+}
+
+.front .better_jump_menu {
+    width: 72%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.front #better-jump-menu {
+    padding: 10px 15px;
+    background: #232323;
+    text-align: center;
 }
 
 .front #edit-submit-most-recent-postings {
@@ -233,9 +256,109 @@ table {
     color: #fff;
 }
 
+.front #section-1 {
+    background: #81acd1;
+}
+
+.front .post-a-job {
+    background: #5990bf;
+}
+
+.front .posting-guide {
+    background: #5b89b1;
+}
+
+.front .post-a-job a, .front .posting-guide a, 
+.front .post-a-job a:hover, .front .posting-guide a:hover,
+.front .post-a-job a:active, .front .posting-guide a:active,
+.front .post-a-job a:visited, .front .posting-guide a:visited
+{
+    color: #fff;
+    display: block;
+    padding: 18px 8px;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
 a.miyellow, a.miyellow:link, a.miyellow:hover, a.miyellow:visited {
     color: #ffcb05;
     font-weight: bold;
+}
+
+.page-node #content-section h1 {
+    margin-bottom: 20px;
+}
+
+.region-sidebar-second .form-item-custom-search-blocks-form-1 {
+    display: inline-block;
+}
+
+.region-sidebar-second #edit-actions--2 {
+    display: inline-block;
+}
+
+.mm-navbar .form-item-custom-search-blocks-form-1.form-group {
+    display: inline-block;
+}
+
+.mm-navbar #edit-actions--2 {
+    display: inline-block;
+}
+
+.status-active-No {
+  background: #F9B9AB;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.slide-menu .user-links {
+  font-size: .8em;
+}
+
+.slide-menu.user-links {
+}
+
+.user-link {
+    padding: 4px;
+    text-align: center;
+}
+
+a.user-link.my-account, a.user-link.create-account {
+  display: block;
+  background: #232323;
+}
+
+a.user-link.logout, a.user-link.login {
+  display: block;
+  background: #121212;
+}
+
+.opportunity-poster .group-administrative-info {
+  display: none;
+}
+
+#opportunity-node-form .panel-default > .panel-heading {
+    color: #efefef;
+    background-color: #002a5b;
+    border-color: #00274c;
+    text-transform: uppercase;
+}
+
+#opportunity-node-form .panel-default > .panel-heading .panel-title {
+    font-size: 1.2em;
+}
+
+#opportunity-node-form fieldset .panel-body {
+    clear: both;
+    display: inherit;
+    background: #efefef;
+}
+
+#opportunity-node-form fieldset .panel-body label  {
+    text-transform: uppercase;
 }
 
 /* MEDIA QUERIES */
@@ -247,6 +370,19 @@ a.miyellow, a.miyellow:link, a.miyellow:hover, a.miyellow:visited {
    .logo-name-nav h1 {
        padding-top: 0;
    } 
+
+   .front .post-a-job a, .front .posting-guide a,
+   .front .post-a-job a:hover, .front .posting-guide a:hover,
+   .front .post-a-job a:active, .front .posting-guide a:active,
+   .front .post-a-job a:visited, .front .posting-guide a:visited {
+	color: #fff;
+        display: block;
+        padding: 18px 6px;
+        font-size: 1.2em;
+        font-weight: 100;
+        text-transform: uppercase;	
+    }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -270,7 +406,9 @@ a.miyellow, a.miyellow:link, a.miyellow:hover, a.miyellow:visited {
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
 	}
+
 }
+
 
 
 /* Small Devices, Tablets */
@@ -279,6 +417,19 @@ a.miyellow, a.miyellow:link, a.miyellow:hover, a.miyellow:visited {
 #header {
         background: rgba(0,45,98,.6);
 }
+
+   .front .post-a-job a, .front .posting-guide a,
+   .front .post-a-job a:hover, .front .posting-guide a:hover,
+   .front .post-a-job a:active, .front .posting-guide a:active,
+   .front .post-a-job a:visited, .front .posting-guide a:visited {
+        color: #fff;
+        display: block;
+        padding: 18px 8px;
+        font-size: 1.2em;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
 
 }
 

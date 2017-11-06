@@ -41,6 +41,7 @@ stylesheets[all][] = hamburgers/dist/hamburgers.css
 
 
 ;;;;;;;;;;;;;;;;;;;;;
-;; Stylesheets
+;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
+scripts[] = js/script.js
 

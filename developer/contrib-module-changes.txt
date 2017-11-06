@@ -1,0 +1,11 @@
+
+***
+Better Jump Menu
+https://www.drupal.org/project/better_jump_menu
+Problem and changes described here:
+https://www.drupal.org/node/2901993
+Edited line 130 of better_jump_menu.form.inc
+Changed $options['button'] to $options['text']
+
+
+***
